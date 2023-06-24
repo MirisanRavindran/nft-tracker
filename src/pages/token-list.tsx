@@ -5,7 +5,7 @@ import { Header } from "../Components/Header";
 import { useState } from "react";
 
 function TokenList() {
-  const [tokenAddress, setOwner] = useState("0x23581767a106ae21c074b2276D25e5C3e136a68b");
+  const [tokenAddress, setOwner] = useState("");
 
   const handleSubmit = (owner: string) => {
     setOwner(owner);
