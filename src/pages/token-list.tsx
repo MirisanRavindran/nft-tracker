@@ -2,14 +2,19 @@ import "../App.css";
 
 import { Tokens } from "../Components/Tokens";
 import { Header } from "../Components/Header";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function TokenList() {
-  const [tokenAddress, setOwner] = useState("");
-
+  const [tokenAddress, setTokenAddress] = useState("");
+  const queryParameters = new URLSearchParams(window.location.search);
   const handleSubmit = (owner: string) => {
-    setOwner(owner);
+    setTokenAddress(owner);
   };
+
+  useEffect(() => {
+    const address = queryParameters.get("q")
+    address && setTokenAddress(address); 
+  },[window.location])
 
   return (
     <>

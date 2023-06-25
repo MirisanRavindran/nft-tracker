@@ -12,9 +12,9 @@ function Header() {
         <th>Token Image</th>
         <th>Token Address</th>
         <th style={{ width: 100 }}>Dapp Name</th> 
-        <th style={{ width: 100 }}>lowest Sale Price In Native Token</th>
-        <th>lowest Sale Price In USDC</th>
-        <th>first Transaction Block Time stamp</th>
+        <th style={{ width: 100 }}>Lowest Sale Price In Native Token</th>
+        <th>Lowest Sale Price In USDC</th>
+        <th>First Transaction Block Time stamp</th>
         <th>ID</th>
         
       </tr>

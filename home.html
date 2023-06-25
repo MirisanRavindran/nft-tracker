@@ -16,38 +16,52 @@
 </head>
 
 <body>
-  <div class="container">
+    <!-- Top Bar -->
+    <header>
+        <div class="logo">
+            <span>NFT Tracker</span>
+        </div>
+        
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#">Home Page</a></li>
+                <li><a class="nav-link" href="http://localhost:5173/">Collection Stats</a></li>
+                <li><a class="nav-link" href="">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <div class="stripes">
-          <div class="line-one"></div>
-          <div class="line-two"></div>
-          <div class="line-three"></div>
-      </div>
-      <!-- navbar-->
-      <nav>
-          <div class="logo">
-              <span>NFT Tracker</span>
-          </div>
-          <ul>
-              <li><a href="./home.html">Home Page</a></li>
-              <li><a href="http://localhost:5173">Collection Stats</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">Support</a></li>
-          </ul>
-      </nav>
+    <!-- Sections -->
+    <div class="wrapper">
+        <!-- Landing Page -->
+        <section class="one">
+            <!-- Stripes -->
+            <div class="line-one"></div>
+            <div class="line-two"></div>
+            <div class="line-three"></div>
 
-      <div class="img">
-          <img src="./src/home.png" alt="">
-      </div>
+            <div class="img">
+                <img src="./src/home.png" alt="">
+            </div>
 
-      <div class="title">
-          <span>NFT Tracker</span>
-          <p>Stay on Top of the NFT Market</p>
-      </div>
+            <div class="title">
+                <span>NFT Tracker</span>
+                <p>Stay on Top of the NFT Market</p>
+            </div>
 
-  </div>
-  <script src="./src/home.js"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./src/home.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="two">
+        <div class="container">
+            <form action="http://localhost:5173/search" method="get" class="search-bar">
+                <input type="text" placeholder="search anything" name="q">
+                <button type="submit"><img src="./src/search.png"></button>
+            </form>
+        </div>
+    </section>
+    </div>
 </body>
 </html>
