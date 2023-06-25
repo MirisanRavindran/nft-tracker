@@ -16,7 +16,7 @@ export function Header({
     <header>
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Enter 0x, name.eth, fc_fname:name, or name.lens"
+          placeholder="Enter Information"
           type="text"
           required
           minLength={3}
