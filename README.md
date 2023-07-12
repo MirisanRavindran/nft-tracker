@@ -7,9 +7,7 @@ In the project directory, you can run:
 ```sh
 npm run dev
 ```
-
 For production environments...
-
 ```sh
 npm i 
 ```
